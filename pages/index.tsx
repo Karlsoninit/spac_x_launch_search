@@ -76,7 +76,11 @@ export default function Home({ data }: any) {
           rel="noopener noreferrer"
         >
           Powered by{" "}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+          <img
+            src={`${"/space_x_launch_search"}/vercel.svg`}
+            alt="Vercel Logo"
+            className={styles.logo}
+          />
         </a>
       </footer>
     </Container>
