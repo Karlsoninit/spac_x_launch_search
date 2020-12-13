@@ -1,4 +1,8 @@
 module.exports = {
-  basePath: "/space_x_launch_search",
-  assetPrefix: "/space_x_launch_search",
+  basePath: `${
+    process.env.NODE_ENV !== "development" ? "/space_x_launch_search" : ""
+  }`,
+  assetPrefix: `${
+    process.env.NODE_ENV !== "development" ? "/space_x_launch_search" : ""
+  }`,
 };

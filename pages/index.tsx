@@ -77,7 +77,11 @@ export default function Home({ data }: any) {
         >
           Powered by{" "}
           <img
-            src={`${"/space_x_launch_search"}/vercel.svg`}
+            src={`${
+              process.env.NODE_ENV !== "development"
+                ? "/space_x_launch_search"
+                : ""
+            }/vercel.svg`}
             alt="Vercel Logo"
             className={styles.logo}
           />
